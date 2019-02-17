@@ -15,19 +15,19 @@
   :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src"]
-                :figwheel {:on-jsload "pomo-2.core/on-js-reload"
+                :figwheel {:on-jsload "pomo.core/on-js-reload"
                            :open-urls ["http://localhost:3449/index.html"]}
 
-                :compiler {:main pomo-2.core
+                :compiler {:main pomo.core
                            :asset-path "js/compiled/out"
-                           :output-to "resources/public/js/compiled/pomo_2.js"
+                           :output-to "resources/public/js/compiled/pomo.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true
                            :preloads [devtools.preload]}}
                {:id "min"
                 :source-paths ["src"]
-                :compiler {:output-to "resources/public/js/compiled/pomo_2.js"
-                           :main pomo-2.core
+                :compiler {:output-to "resources/public/js/compiled/pomo.js"
+                           :main pomo.core
                            :optimizations :advanced
                            :pretty-print false}}]}
 

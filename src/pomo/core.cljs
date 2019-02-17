@@ -1,4 +1,4 @@
-(ns pomo-2.core
+(ns pomo.core
     (:require [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
