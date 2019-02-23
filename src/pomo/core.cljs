@@ -14,6 +14,9 @@
    [:h2 "some text whatsup"]
    ])
 
+(defn some-func [xx]
+  (* 2 xx))
+
 (reagent/render-component [hello-world]
                           (. js/document (getElementById "app")))
 
