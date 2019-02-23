@@ -18,6 +18,7 @@
   (* xx xx))
 
 ;; this is another
+;; or is it?
 
 (reagent/render-component [hello-world]
                           (. js/document (getElementById "app")))
