@@ -15,7 +15,9 @@
    ])
 
 (defn some-func [xx]
-  (* 2 xx))
+  (* xx xx))
+
+;; this is another
 
 (reagent/render-component [hello-world]
                           (. js/document (getElementById "app")))
