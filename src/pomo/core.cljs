@@ -5,11 +5,13 @@
 
 (def app-state (atom {:text "Example"}))
 
+;; some comments 
 
 (defn hello-world []
   [:div
    [:h1 (:text @app-state)]
    #_[--function--]
+   [:h2 "some text whatsup"]
    ])
 
 (reagent/render-component [hello-world]
