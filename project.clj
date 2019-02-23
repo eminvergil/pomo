@@ -1,5 +1,5 @@
 (defproject pomo-2 "0.1.0-SNAPSHOT"
-  
+  ;;this is comment  
   :min-lein-version "2.7.1"
 
   :dependencies [[org.clojure/clojure "1.9.0"]
